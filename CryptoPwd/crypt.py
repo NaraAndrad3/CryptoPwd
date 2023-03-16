@@ -39,7 +39,7 @@ class Generate:
             Este método gera uma senha composta apenas por letras maiúsculas e minúsculas, incluindo a letra "ç". O tamanho da senha é especificado pelo argumento tam.
 
 
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -61,7 +61,7 @@ class Generate:
             Este método gera uma senha composta apenas por letras maiúsculas e minúsculas, incluindo a letra "ç". O tamanho da senha é especificado pelo argumento tam.
 
 
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -81,7 +81,7 @@ class Generate:
         """
             Este método gera uma senha composta apenas por dígitos. O tamanho da senha é especificado pelo argumento tam.
 
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -103,7 +103,7 @@ class Generate:
         """
             Este método gera uma senha pronunciável, alternando vogais e consoantes. O tamanho da senha é especificado pelo argumento tam.       
             
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -124,7 +124,7 @@ class Generate:
         """
             Este método gera uma senha numérica sem repetições de caracteres. O tamanho da senha é especificado pelo argumento tam.
             
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -143,7 +143,7 @@ class Generate:
         """
             Este método gera uma senha pronunciável, alternando vogais e consoantes. O tamanho da senha é especificado pelo argumento tam.       
             
-            Parameteres
+            Parameters
             -----------
             tam: int
                 Tamanho da senha gerada
@@ -169,7 +169,7 @@ class Generate:
            "sal" (salt) para aumentar a segurança do hash. O sal é um valor aleatório que é adicionado à senha antes de calcular o hash, o que torna mais difícil para um invasor pré-calcular o hash para uma determinada senha.
 
             
-            Parameteres
+            Parameters
             -----------
             pwd: int
                 Tamanho da senha gerada
@@ -217,7 +217,7 @@ class FilesDec:
         """
             Recebe uma senha como entrada e usa a biblioteca cryptography para gerar uma chave de criptografia a partir dessa senha. A chave é retornada na forma de uma string codificada.
 
-            Parameteres
+            Parameters
             -----------
             pwd: str
                 senha a ser criptografada.
@@ -243,7 +243,7 @@ class FilesDec:
         """
             O método extensionChange recebe o nome de um arquivo como entrada e retorna o nome do arquivo sem sua extensão.
 
-            Parameteres
+            Parameters
             -----------
             filename: str
                 senha a ser criptografada.
@@ -266,7 +266,7 @@ class FilesDec:
         """
             Este método criptografa um arquivo com uma senha e retorna o nome do arquivo de chave. Ele usa o encryptPassword()método para derivar uma chave da senha de entrada e, em seguida, grava a chave em um arquivo com o mesmo nome do arquivo de entrada, mas com uma extensão ".key". Por fim, ele usa o algoritmo de criptografia para criptografar o arquivo de entrada com a chave derivada e salva os dados criptografados no mesmo arquivo  
 
-            Parameteres
+            Parameters
             -----------
             filename: str
                 arquivo para ser criptografado
@@ -302,7 +302,7 @@ class FilesDec:
         """
             Este método descriptografa um arquivo com uma senha. Ele usa o encryptPassword()método para derivar uma chave da senha de entrada e, em seguida, lê a chave de um arquivo com o mesmo nome do arquivo de entrada, mas com uma extensão ".key". Se a chave derivada não corresponder à chave armazenada no arquivo de chave, o método imprimirá uma mensagem de erro. Caso contrário, ele usa o algoritmo de criptografia simétrica Fernet para descriptografar o arquivo de entrada com a chave derivada e salva os dados descriptografados no mesmo arquivo.
 
-            Parameteres
+            Parameters
             -----------
             filename: str
                 arquivo para ser criptografado
